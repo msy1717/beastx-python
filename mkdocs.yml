@@ -1,0 +1,94 @@
+site_name: BeastX Documentation
+site_description: A powerful Telegram client library with Telethon included
+site_author: BeastX Team
+site_url: https://msy1717.github.io/beastx-python
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+  icon:
+    logo: material/lightning-bolt
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/extra.js
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Installation: getting-started/installation.md
+    - Quick Start: getting-started/quickstart.md
+    - Authentication: getting-started/authentication.md
+  - User Guide:
+    - Sending Messages: guide/sending-messages.md
+    - Event Handlers: guide/events.md
+    - Sessions: guide/sessions.md
+    - Working with Media: guide/media.md
+  - API Reference:
+    - TelegramClient: api/client.md
+    - Events: api/events.md
+    - Sessions: api/sessions.md
+    - Utilities: api/utils.md
+  - Examples:
+    - Basic Bot: examples/basic-bot.md
+    - Echo Bot: examples/echo-bot.md
+    - Userbot: examples/userbot.md
+  - Credits: credits.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/msy1717/beastx-python
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/GodmrunaL
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/beastx-python/
